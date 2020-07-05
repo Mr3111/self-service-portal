@@ -5,7 +5,7 @@ import App from './App';
 import store from './store.js'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom'
-import {register} from "./serviceWorker";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <Router>
@@ -14,4 +14,4 @@ ReactDOM.render(
     </Provider>
   </Router>
 , document.getElementById('root'));
-register();
+serviceWorker.unregister();
