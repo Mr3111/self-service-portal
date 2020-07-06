@@ -1,31 +1,36 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
 import SelectComponent from "../selectComponent";
 import {FileUploadComponent} from "../fileUploadComponent/fileUploadComponent";
+import './deliveryConfigComponent.css';
+import {useSelector} from "react-redux";
+import SimpleCard from "../simpleCard/simpleCard";
+import Grid from '@material-ui/core/Grid';
 
-class DeliveryConfigComponent extends Component {
-  render() {
-    return <React.Fragment>
+const DeliveryConfigComponent = () => {
+    const schemaFields = useSelector(state=>state.schemaFields)
+    const fileFields = useSelector(state => state.file)
+    return <div>
       <CssBaseline />
-      <Container maxWidth="md">
+      <div className='outer-card'>
+      <SimpleCard>
+      </SimpleCard>
+      </div>
+          <Grid container spacing={0}>
+            {fileFields.map((field, index) => {
+                return <Grid key={index} item xs={12}>
+                    <SelectComponent
+                        options={schemaFields}
+                        field={field}
+                        index={index}
+                    />
+                </Grid>
+            })}
+        </Grid>
 
 
-        <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '50vh' }} >
-          <div className="row">
-            <div className="col">
-              1 of 2
-            </div>
-            <div className="col">
-              <SelectComponent/>
-            </div>
-          </div>
-        </Typography>
-      </Container>
       <FileUploadComponent/>
-    </React.Fragment>;
-  }
+    </div>;
 }
 
 export default DeliveryConfigComponent;
