@@ -1,6 +1,6 @@
-var _ =  require('lodash')
 
-const file = {
+
+const initialState = {
     id : '123',
     transactionNo : 'ABC321',
     'invoiceDate' : '',
@@ -8,7 +8,7 @@ const file = {
     profile_image: ""
 };
 
-const initialState = _.keys(file);
+// const initialState = _.keys(file);
 
 const fileUploadReducer = (state = initialState, action) => {
     return state;

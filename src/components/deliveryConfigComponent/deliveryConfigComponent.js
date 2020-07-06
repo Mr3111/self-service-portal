@@ -6,10 +6,11 @@ import './deliveryConfigComponent.css';
 import {useSelector} from "react-redux";
 import SimpleCard from "../simpleCard/simpleCard";
 import Grid from '@material-ui/core/Grid';
+var _ =  require('lodash');
 
 const DeliveryConfigComponent = () => {
     const schemaFields = useSelector(state=>state.schemaFields)
-    const fileFields = useSelector(state => state.file)
+    const fileFields = useSelector(state => _.keys(state.file))
     return <div>
       <CssBaseline />
       <div className='outer-card'>
