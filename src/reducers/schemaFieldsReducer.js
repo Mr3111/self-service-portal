@@ -172,7 +172,17 @@ const initialState = fieldsArray.map(field => {
 })
 
 const SchemaFieldsReducer = (state = initialState, action) => {
-    return state;
+    switch(action.type){
+        case 'SHOW_LEAF': {
+            return state.filter(t => t.completed)
+        }
+        case 'SHOW_OBJECT': {
+            return JSON.parse(action.payload)
+        }
+        default: {
+            return state
+        }
+    }
 }
 
 export default SchemaFieldsReducer;

@@ -4,7 +4,7 @@ import DeliveryConfigComponent from "./components/deliveryConfigComponent";
 import {FileUploadComponent} from "./components/fileUploadComponent/fileUploadComponent";
 import * as data from './reducers/fieldsData.json'
 import SimpleCard from "./components/simpleCard/simpleCard";
-import {connect, useSelector} from "react-redux";
+import {connect} from "react-redux";
 class App extends Component {
     constructor(props) {
         super(props);
