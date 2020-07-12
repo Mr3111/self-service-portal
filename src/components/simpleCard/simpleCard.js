@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import AddIcon from '@material-ui/icons/Add';
 import IconButton from "@material-ui/core/IconButton";
+import AddFieldComponent from "../addFieldComponent";
+import AddCircleIcon from '@material-ui/icons/AddCircle';
+import CancelIcon from '@material-ui/icons/Cancel';
+import './simpleCard.css';
 
 const useStyles = makeStyles({
     root: {
@@ -25,18 +28,23 @@ const useStyles = makeStyles({
 
 export default function SimpleCard(props) {
     const classes = useStyles();
+    const [add, setAdd] = useState(false);
 
     return (
-        <Card className={classes.root}>
-            <CardContent>
+        <Card >
+            {/*<div className='outer-card'>*/}
+            <CardContent >
                 {props.children}
             </CardContent>
+            {/*</div>*/}
             <CardActions>
-                <IconButton aria-label="add" >
-                    <AddIcon />
+                <IconButton aria-label="add" onClick={()=>setAdd(!add)}>
+                    {!add && < AddCircleIcon color={'primary'}/>}
+                    {add && < CancelIcon color={'primary'}/>}
                 </IconButton>
                 Add Field
             </CardActions>
+            {add && <AddFieldComponent/>}
         </Card>
     );
 }

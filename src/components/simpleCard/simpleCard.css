@@ -1,0 +1,5 @@
+.outer-card{
+    display: flex;
+    height: 70vh;
+    /*width: 70%;*/
+}
