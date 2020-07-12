@@ -21,7 +21,7 @@ const SelectComponent =({field, options, index}) =>{
           isClearable={true}
           name="colors"
           options={options}
-          className="col select-button basic-multi-select"
+          className="col-3 select-button basic-multi-select"
           classNamePrefix="select"
       />
       <div className='delete-icon'>

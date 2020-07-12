@@ -1,23 +1,48 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import SelectComponent from "../selectComponent";
-import {FileUploadComponent} from "../fileUploadComponent/fileUploadComponent";
 import './deliveryConfigComponent.css';
 import {useSelector} from "react-redux";
-import SimpleCard from "../simpleCard/simpleCard";
+
 import Grid from '@material-ui/core/Grid';
+import * as data from '../../reducers/fieldsData.json'
 var _ =  require('lodash');
 
-const DeliveryConfigComponent = () => {
+const DeliveryConfigComponent = (fieldJson) => {
     const schemaFields = useSelector(state=>state.schemaFields)
-    const fileFields = useSelector(state => _.keys(state.file))
+    const newFieldJson = fieldJson["fieldJson"]
+    console.log("indelerrver", fieldJson)
+    const fileFields = _.keys(newFieldJson)
+    // console.log("nfj",newFieldJson)
     return <div>
       <CssBaseline />
       <div className='outer-card'>
-      <SimpleCard>
-      </SimpleCard>
+      {/* <SimpleCard>
+      </SimpleCard> */}
       </div>
-          <Grid container spacing={0}>
+       {
+           newFieldJson.map((allFields, index) => {
+            const fieldKeys = _.keys(allFields);
+            
+            // if(allFields["customFieldName"]){
+                console.log(allFields["customFieldName"])
+                const subfield = allFields.subFields!=undefined? <DeliveryConfigComponent fieldJson= {allFields["subFields"]}></DeliveryConfigComponent>
+                : null
+                return (<div>
+                            <SelectComponent
+                                options={schemaFields}
+                                field={allFields["customFieldName"]}
+                                index={index}
+                            />
+                {subfield}
+                </div>)
+                
+            //} 
+        }
+        )
+       }
+
+          {/* <Grid container spacing={0}>
             {fileFields.map((field, index) => {
                 return <Grid key={index} item xs={12}>
                     <SelectComponent
@@ -27,10 +52,14 @@ const DeliveryConfigComponent = () => {
                     />
                 </Grid>
             })}
-        </Grid>
+        </Grid> */}
+        {/* {
+            console.log("In dedli",fileFields.filter(key=> key ==='subFields').map(name=>
+               newFieldJson[name])) */
+        }
 
 
-      <FileUploadComponent/>
+      
     </div>;
 }
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import {DropzoneDialog} from "material-ui-dropzone";
+import store from '../../store';
+import {fileDispatch} from '../../reducers/fileUploadReducer'
 
 export function FileUploadComponent(props) {
     const [open, setOpen] = React.useState(false);
-    const [file, setFile] = React.useState({});
+    
 
     return (
         <div>
@@ -27,11 +29,14 @@ export function FileUploadComponent(props) {
                     const reader = new FileReader();
                     reader.onload=(e)=>{
                         const file = e.target.result;
-                        setFile(file);
-                        console.log('onSave', file)
+                        //console.log('onSave', file)
+                        // const asfs= JSON.parse(JSON.stringify(file));
+                        store.dispatch(fileDispatch(file))
                     }
-                    reader.readAsText(files[0])
+                    reader.readAsText(files[0]);
                     setOpen(false);
+                    // const as= JSON.parse(JSON.stringify(file))
+                    // console.log("In uploa",as)
                 }}
                 showPreviews={true}
                 showFileNamesInPreview={true}
