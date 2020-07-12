@@ -10,9 +10,9 @@ class App extends Component {
     return (
       <div className="App">
         <SimpleCard>
-      </SimpleCard>
+        </SimpleCard>
         <DeliveryConfigComponent fieldJson = {dataFields} />
-    <FileUploadComponent/>
+        <FileUploadComponent/>
       </div>
     );
   }
