@@ -11,7 +11,7 @@ const customStyles = {
   })
 }
 
-const SelectComponent =({field, options, index}) =>{
+const SelectComponent =({field, options, index, handleSelect}) =>{
     return <div className="row" key={index} id={index}>
       <div  className="col select-button text-left">
         {field}
@@ -23,6 +23,7 @@ const SelectComponent =({field, options, index}) =>{
           options={options}
           className="col-3 select-button basic-multi-select"
           classNamePrefix="select"
+          onChange={handleSelect}
       />
       <div className='delete-icon'>
         <IconButton aria-label="delete" >

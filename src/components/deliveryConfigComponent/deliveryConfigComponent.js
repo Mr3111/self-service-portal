@@ -8,9 +8,12 @@ import Grid from '@material-ui/core/Grid';
 import * as data from '../../reducers/fieldsData.json'
 var _ =  require('lodash');
 
-const DeliveryConfigComponent = (fieldJson) => {
-    const schemaFields = useSelector(state=>state.schemaFields)
-    const newFieldJson = fieldJson["fieldJson"]
+const DeliveryConfigComponent = ({fieldJson, schemaFields, handleUpdate}) => {
+    // const schemaFields = useSelector(state=>state.schemaFields)
+    const [newFieldJson, setnewFieldJson] = React.useState(fieldJson)
+    const handleSelect = e =>{
+        console.log('ttt', e)
+    }
     return <div>
       <CssBaseline />
        {
@@ -24,6 +27,7 @@ const DeliveryConfigComponent = (fieldJson) => {
                                 options={schemaFields}
                                 field={allFields["customFieldName"]}
                                 index={index}
+                                handleSelect={handleSelect}
                             />
                     {subfield}
                     </div>)

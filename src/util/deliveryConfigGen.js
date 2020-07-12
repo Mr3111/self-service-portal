@@ -1,3 +1,4 @@
+// const data = require ( './final_vehicle_inventory.json')
 const _ = require('lodash')
 const merge = require('deepmerge')
 
@@ -13,7 +14,7 @@ const deepReduceObject = (object) => {
 
 const deepMergeArray = (array) => {
     let unionObject = merge.all(array)
-    deepReduceObject(unionObject)
+    unionObject = deepReduceObject(unionObject)
     return new Array(unionObject)
 }
 
@@ -62,7 +63,10 @@ const parseObject= (object) =>{
 }
 
 const configGenerator = (file) =>{
+    printPretty('codeGen_output', parseObject(deepReduceObject(file)))
     return parseObject(deepReduceObject(file))
 }
+
+// configGenerator(data)
 
 export default configGenerator;
