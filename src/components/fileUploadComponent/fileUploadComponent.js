@@ -29,14 +29,10 @@ export function FileUploadComponent(props) {
                     const reader = new FileReader();
                     reader.onload=(e)=>{
                         const file = e.target.result;
-                        //console.log('onSave', file)
-                        // const asfs= JSON.parse(JSON.stringify(file));
                         store.dispatch(fileDispatch(file))
                     }
                     reader.readAsText(files[0]);
                     setOpen(false);
-                    // const as= JSON.parse(JSON.stringify(file))
-                    // console.log("In uploa",as)
                 }}
                 showPreviews={true}
                 showFileNamesInPreview={true}
