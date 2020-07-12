@@ -15,7 +15,6 @@ const AddFieldComponent = () => {
             <div className={'input-section'}>
                 <p>Field name:</p>
                 <SelectComponent onChange={e => handleChange(e)} name={'name'} placeholder={'Field name...'}/>
-
             </div>
             <div className={'input-section'}>
                 <p>Rule name:</p>

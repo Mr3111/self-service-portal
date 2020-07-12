@@ -13,23 +13,21 @@ const DeliveryConfigComponent = (fieldJson) => {
     const newFieldJson = fieldJson["fieldJson"]
     return <div>
       <CssBaseline />
-      <div className='outer-card'>
-      </div>
        {
            newFieldJson.map((allFields, index) => {
                 // console.log(allFields["customFieldName"])
-                const subfield = allFields.subFields!==undefined? <DeliveryConfigComponent fieldJson= {allFields["subFields"]}/>
-                : null
-                return (<div>
+                const subfield = allFields.subFields!==undefined ?
+                    <DeliveryConfigComponent fieldJson= {allFields["subFields"]}/> : null
+                return (
+                    <div key={index}>
                             <SelectComponent
                                 options={schemaFields}
                                 field={allFields["customFieldName"]}
                                 index={index}
                             />
-                {subfield}
-                </div>)
-        }
-        )
+                    {subfield}
+                    </div>)
+           })
        }
     </div>;
 }
