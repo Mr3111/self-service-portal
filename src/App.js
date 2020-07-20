@@ -5,6 +5,7 @@ import {FileUploadComponent} from "./components/fileUploadComponent/fileUploadCo
 import * as data from './reducers/fieldsData.json'
 import SimpleCard from "./components/simpleCard/simpleCard";
 import {connect} from "react-redux";
+import AddFieldComponent from "./components/addFieldComponent";
 class App extends Component {
     constructor(props) {
         super(props);
@@ -12,6 +13,12 @@ class App extends Component {
             schemaFields: props.schemaFields,
             configFields: data.fields
         }
+    }
+
+    handleFieldJsonUpdate=(fieldJson)=>{
+        this.setState({
+            configFields: fieldJson
+        })
     }
 
     handleUpdate=(e)=>{
@@ -24,12 +31,10 @@ class App extends Component {
       // console.log('fields', this.state.schemaFields)
         return (
           <div className="App">
-            <SimpleCard>
-            </SimpleCard>
             <DeliveryConfigComponent
-                fieldJson = {this.state.configFields}
+                fieldsJson = {this.state.configFields}
                 schemaFields={this.state.schemaFields}
-                handleUpdate={this.handleUpdate}
+                handleUpdate={this.handleFieldJsonUpdate}
             />
             <FileUploadComponent/>
           </div>

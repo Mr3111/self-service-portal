@@ -1,0 +1,446 @@
+{
+	"importVehicles": [
+		{
+			"cid": "b7198845-b885-44f8-ba19-8eb48d5d8dac",
+			"certified": true,
+			"description": "test vehicle comments",
+			"version": "1.0",
+			"importType": "PRIMARY",
+			"importAction": "DELETED",
+			"importSource": "Test Provider",
+			"importSourceKey": "1438c046-a6c1-42c5-aed3-ffab65b39f66",
+			"vin": "WP1AA2A21ELA97064",
+			"stockNumber": "PN1565A",
+			"bodyDescription": "4 Door SUV",
+			"driveTrain": "AWD",
+			"isCertified": true,
+			"make": "Porsche",
+			"model": "Cayenne",
+			"odometer": "58932.0",
+			"door": "4.0",
+			"engine": {
+				"cylinders": "6.0",
+				"description": "3.6L V6 24V GDI DOHC",
+				"displacement": "3.6",
+				"fuelType": "G",
+				"induction": "GDI",
+				"power": "24.0"
+			},
+			"exterior": {
+				"baseColor": "Black",
+				"name": "Black",
+				"code": "BLK"
+			},
+			"interior": {
+				"baseColor": "Black",
+				"code": "BLK",
+				"material": null,
+				"name": null
+			},
+			"prices": {
+				"prices": [
+					{
+						"amount": "11000.0",
+						"currencyCode": "USD",
+						"type": "msrp"
+					}
+				]
+			},
+			"seatingCapacity": "5",
+			"stockType": "Used",
+			"transmission": {
+				"description": "8-Speed Automatic",
+				"speeds": "8.0",
+				"type": "Automatic"
+			},
+			"trim": "SE",
+			"vehicleType": "U",
+			"inventoryStatus": {
+				"status": "Available"
+			},
+			"options": [
+				{
+					"optionCode": "CodeA",
+					"type": "Source",
+					"prices": {
+						"prices": [
+							{
+								"amount": "15000.0",
+								"currencyCode": "USD",
+								"type": "msrp"
+							}
+						]
+					}
+				},
+				{
+					"optionCode": "CodeB",
+					"type": "FACTORY",
+					"prices": {
+						"prices": [
+							{
+								"amount": "17000.0",
+								"currencyCode": "USD",
+								"type": "msrp"
+							}
+						]
+					}
+				}
+			],
+			"wheelBase": "114.0",
+			"year": "2014.0",
+			"dealerFeatures": [
+				{
+					"description": "Remote power door locks"
+				},
+				{
+					"description": "Remote power door locks"
+				},
+				{
+					"description": "Power windows"
+				},
+				{
+					"description": "Cruise control"
+				},
+				{
+					"description": "4-wheel ABS Brakes"
+				},
+				{
+					"description": "Front Ventilated disc brakes"
+				},
+				{
+					"description": "1st and 2nd row curtain head airbags"
+				},
+				{
+					"description": "Passenger Airbag"
+				},
+				{
+					"description": "Side airbag"
+				},
+				{
+					"description": "Rear spoiler: Lip"
+				},
+				{
+					"description": "Bluetooth wireless phone connectivity"
+				},
+				{
+					"description": "Audio system security"
+				},
+				{
+					"description": "Digital Audio Input"
+				},
+				{
+					"description": "Audio system memory card slot"
+				},
+				{
+					"description": "MP3 player"
+				},
+				{
+					"description": "Speed Sensitive Audio Volume Control"
+				},
+				{
+					"description": "Braking Assist"
+				},
+				{
+					"description": "ABS and Driveline Traction Control"
+				},
+				{
+					"description": "Stability control"
+				},
+				{
+					"description": "Privacy glass: Deep"
+				},
+				{
+					"description": "Silver aluminum rims"
+				},
+				{
+					"description": "Driver knee airbags"
+				},
+				{
+					"description": "Front fog/driving lights"
+				},
+				{
+					"description": "Rear fog lights"
+				},
+				{
+					"description": "Leather/metal-look steering wheel trim"
+				},
+				{
+					"description": "Leather/metal-look shift knob trim"
+				},
+				{
+					"description": "Piano black dash trim"
+				},
+				{
+					"description": "Piano black door trim"
+				},
+				{
+					"description": "Piano black center console trim"
+				},
+				{
+					"description": "Beverage cooler in glovebox"
+				},
+				{
+					"description": "Video Monitor Location: Front"
+				},
+				{
+					"description": "Trip computer"
+				},
+				{
+					"description": "External temperature display"
+				},
+				{
+					"description": "Tachometer"
+				},
+				{
+					"description": "Power remote driver mirror adjustment"
+				},
+				{
+					"description": "Heated driver mirror"
+				},
+				{
+					"description": "Heated passenger mirror"
+				},
+				{
+					"description": "Power remote passenger mirror adjustment"
+				},
+				{
+					"description": "Power retractable mirrors"
+				},
+				{
+					"description": "Dual illuminated vanity mirrors"
+				},
+				{
+					"description": "Daytime running lights"
+				},
+				{
+					"description": "Heated windshield washer jets"
+				},
+				{
+					"description": "Remote window operation"
+				},
+				{
+					"description": "Audio controls on steering wheel"
+				},
+				{
+					"description": "Power liftgate"
+				},
+				{
+					"description": "Power remote trunk release"
+				},
+				{
+					"description": "Front and rear reading lights"
+				},
+				{
+					"description": "Anti-theft alarm system"
+				},
+				{
+					"description": "Leather seat upholstery"
+				},
+				{
+					"description": "Bucket front seats"
+				},
+				{
+					"description": "Split rear bench"
+				},
+				{
+					"description": "Flip forward cushion/seatback rear seats"
+				},
+				{
+					"description": "Rear seats center armrest"
+				},
+				{
+					"description": "Tilt and telescopic steering wheel"
+				},
+				{
+					"description": "Suspension class: Regular"
+				},
+				{
+					"description": "Interior air filtration"
+				},
+				{
+					"description": "Automatic front air conditioning"
+				},
+				{
+					"description": "Dual front air conditioning zones"
+				},
+				{
+					"description": "Tire Pressure Monitoring System: Tire specific"
+				},
+				{
+					"description": "Cargo area light"
+				},
+				{
+					"description": "Max cargo capacity: 63 cu.ft."
+				},
+				{
+					"description": "Vehicle Emissions: ULEV II"
+				},
+				{
+					"description": "Fuel Type: Premium unleaded"
+				},
+				{
+					"description": "Fuel Capacity: 26.4 gal."
+				},
+				{
+					"description": "Instrumentation: Low fuel level"
+				},
+				{
+					"description": "Clock: Analog"
+				},
+				{
+					"description": "Headlights off auto delay"
+				},
+				{
+					"description": "Dusk sensing headlights"
+				},
+				{
+					"description": "Coil front spring"
+				},
+				{
+					"description": "Regular front stabilizer bar"
+				},
+				{
+					"description": "Independent front suspension classification"
+				},
+				{
+					"description": "Double wishbone front suspension"
+				},
+				{
+					"description": "Four-wheel Independent Suspension"
+				},
+				{
+					"description": "Coil rear spring"
+				},
+				{
+					"description": "Rear Stabilizer Bar: Regular"
+				},
+				{
+					"description": "Independent rear suspension"
+				},
+				{
+					"description": "Multi-link rear suspension"
+				},
+				{
+					"description": "Front and rear suspension stabilizer bars"
+				},
+				{
+					"description": "Rain sensing front wipers"
+				},
+				{
+					"description": "Variable intermittent front wipers"
+				},
+				{
+					"description": "Steel spare wheel rim"
+				},
+				{
+					"description": "Spare Tire Mount Location: Inside under cargo"
+				},
+				{
+					"description": "Body-colored grille"
+				},
+				{
+					"description": "Center Console: Full with covered storage"
+				},
+				{
+					"description": "Overhead console: Mini"
+				},
+				{
+					"description": "Permanent locking hubs"
+				},
+				{
+					"description": "Overall Length: 190.8\""
+				},
+				{
+					"description": "Overall Width: 76.3\""
+				},
+				{
+					"description": "Overall height: 67.4\""
+				},
+				{
+					"description": "Wheelbase: 114.0\""
+				},
+				{
+					"description": "Front Head Room: 39.6\""
+				},
+				{
+					"description": "Front Shoulder Room: 58.9\""
+				},
+				{
+					"description": "Front Hip Room: 57.8\""
+				},
+				{
+					"description": "Five 12V DC power outlets"
+				},
+				{
+					"description": "Transmission hill holder"
+				},
+				{
+					"description": "Seatbelt pretensioners: Front and rear"
+				},
+				{
+					"description": "Rear center seatbelt: 3-point belt"
+				},
+				{
+					"description": "Door reinforcement: Side-impact door beam"
+				},
+				{
+					"description": "Engine immobilizer"
+				},
+				{
+					"description": "Cargo tie downs"
+				},
+				{
+					"description": "Floor mats: Carpet front and rear"
+				},
+				{
+					"description": "Rear area cargo cover: Roll-up"
+				},
+				{
+					"description": "Cupholders: Front and rear"
+				},
+				{
+					"description": "Door pockets: Driver, passenger and rear"
+				},
+				{
+					"description": "Seatback storage: 2"
+				},
+				{
+					"description": "Tires: Speed Rating: V"
+				},
+				{
+					"description": "Type of tires: AS"
+				},
+				{
+					"description": "Tires: Prefix: P"
+				},
+				{
+					"description": "Left rear passenger door type: Conventional"
+				},
+				{
+					"description": "Rear door type: Power liftgate"
+				},
+				{
+					"description": "Right rear passenger door type: Conventional"
+				},
+				{
+					"description": "Body-colored bumpers"
+				},
+				{
+					"description": "Concealed antenna"
+				},
+				{
+					"description": "4 Door"
+				},
+				{
+					"description": "Driver airbag"
+				},
+				{
+					"description": "Universal remote transmitter"
+				},
+				{
+					"description": "Manual child safety locks"
+				}
+			]
+		}
+	]
+}

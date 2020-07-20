@@ -1,5 +1,5 @@
 {
-    "fields": [
+  "fields": [
     {
       "field": null,
       "customFieldName": "importVehicles",
@@ -7,185 +7,277 @@
       "subFields": [
         {
           "field": null,
-          "customFieldName": null,
-          "rule": "skipKeyRule",
+          "customFieldName": "cid",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "certified",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "description",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "version",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "importType",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "importAction",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "importSource",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "importSourceKey",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "vin",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "stockNumber",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "bodyDescription",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "driveTrain",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "isCertified",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "make",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "model",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "odometer",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "door",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "engine",
+          "rule": null,
           "subFields": [
-            
             {
               "field": null,
-              "customFieldName": "certified",
-              "rule": "rootRule"
+              "customFieldName": "cylinders",
+              "rule": null
             },
             {
               "field": null,
               "customFieldName": "description",
-              "rule": "rootRule"
+              "rule": null
             },
             {
               "field": null,
-              "customFieldName": "importAction",
-              "rule": "rootRule"
+              "customFieldName": "displacement",
+              "rule": null
             },
             {
               "field": null,
-              "customFieldName": "productionNumber",
-              "rule": "rootRule"
+              "customFieldName": "fuelType",
+              "rule": null
             },
             {
               "field": null,
-              "customFieldName": "importSource",
-              "rule": "rootRule"
+              "customFieldName": "induction",
+              "rule": null
             },
             {
               "field": null,
-              "customFieldName": "importSourceKey",
-              "rule": "rootRule"
+              "customFieldName": "power",
+              "rule": null
+            }
+          ]
+        },
+        {
+          "field": null,
+          "customFieldName": "exterior",
+          "rule": null,
+          "subFields": [
+            {
+              "field": null,
+              "customFieldName": "baseColor",
+              "rule": null
             },
             {
               "field": null,
-              "customFieldName": null,
-              "rule": "rootRule"
+              "customFieldName": "name",
+              "rule": null
             },
             {
               "field": null,
-              "customFieldName": "bodyDescription",
-              "rule": "rootRule"
+              "customFieldName": "code",
+              "rule": null
+            }
+          ]
+        },
+        {
+          "field": null,
+          "customFieldName": "interior",
+          "rule": null,
+          "subFields": [
+            {
+              "field": null,
+              "customFieldName": "baseColor",
+              "rule": null
             },
             {
               "field": null,
-              "customFieldName": "driveTrain",
-              "rule": "rootRule"
+              "customFieldName": "code",
+              "rule": null
             },
             {
               "field": null,
-              "customFieldName": null,
-              "rule": "rootRule"
+              "customFieldName": "material",
+              "rule": null
             },
             {
               "field": null,
-              "customFieldName": "bedLength",
-              "rule": "rootRule"
-            },
+              "customFieldName": "name",
+              "rule": null
+            }
+          ]
+        },
+        {
+          "field": null,
+          "customFieldName": "prices",
+          "rule": null,
+          "subFields": [
             {
               "field": null,
-              "customFieldName": "lotDate",
-              "rule": "rootRule"
-            },
-            {
-              "field": null,
-              "customFieldName": null,
-              "rule": "rootRule"
-            },
-            {
-              "field": null,
-              "customFieldName": null,
-              "rule": "rootRule"
-            },
-            {
-              "field": null,
-              "customFieldName": null,
-              "rule": "stringFieldValueRule"
-            },
-            {
-              "field": null,
-              "customFieldName": "door",
-              "rule": "stringFieldValueRule"
-            },
-            {
-              "field": null,
-              "customFieldName": "oemModelCode",
-              "rule": "stringFieldValueRule"
-            },
-            {
-              "field": null,
-              "customFieldName": "oemDealerCode",
-              "rule": "stringFieldValueRule"
-            },
-            {
-              "field": null,
-              "customFieldName": null,
-              "rule": "rootRule",
-              "subFields": [
-                {
-                  "f": null,
-                  "customFieldName": "cylinders",
-                  "rule": "IntStringFormatValueRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": null,
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": null,
-                  "rule": "stringFieldValueRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": null,
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": "induction",
-                  "rule": "rootRule"
-                }
-              ]
-            },
-            {
-              "field": null,
-              "customFieldName": "exterior",
-              "rule": "rootRule",
+              "customFieldName": "prices",
+              "rule": "asListRule",
               "subFields": [
                 {
                   "field": null,
-                  "customFieldName": null,
-                  "rule": "rootRule"
+                  "customFieldName": "amount",
+                  "rule": null
                 },
                 {
                   "field": null,
-                  "customFieldName": "name",
-                  "rule": "rootRule"
+                  "customFieldName": "currencyCode",
+                  "rule": null
                 },
                 {
                   "field": null,
-                  "customFieldName": "code",
-                  "rule": "rootRule"
+                  "customFieldName": "type",
+                  "rule": null
                 }
               ]
+            }
+          ]
+        },
+        {
+          "field": null,
+          "customFieldName": "seatingCapacity",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "stockType",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "transmission",
+          "rule": null,
+          "subFields": [
+            {
+              "field": null,
+              "customFieldName": "description",
+              "rule": null
             },
             {
               "field": null,
-              "customFieldName": "interior",
-              "rule": "rootRule",
-              "subFields": [
-                {
-                  "field": null,
-                  "customFieldName": null,
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": "code",
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": null,
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": "name",
-                  "rule": "rootRule"
-                }
-              ]
+              "customFieldName": "speeds",
+              "rule": null
+            },
+            {
+              "field": null,
+              "customFieldName": "type",
+              "rule": null
+            }
+          ]
+        },
+        {
+          "field": null,
+          "customFieldName": "trim",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "vehicleType",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "inventoryStatus",
+          "rule": null,
+          "subFields": [
+            {
+              "field": null,
+              "customFieldName": "status",
+              "rule": null
+            }
+          ]
+        },
+        {
+          "field": null,
+          "customFieldName": "options",
+          "rule": "asListRule",
+          "subFields": [
+            {
+              "field": null,
+              "customFieldName": "optionCode",
+              "rule": null
+            },
+            {
+              "field": null,
+              "customFieldName": "type",
+              "rule": null
             },
             {
               "field": null,
               "customFieldName": "prices",
-              "rule": "rootRule",
+              "rule": null,
               "subFields": [
                 {
                   "field": null,
@@ -194,294 +286,48 @@
                   "subFields": [
                     {
                       "field": null,
-                      "customFieldName": null,
-                      "rule": "skipFieldIfNullRule",
-                      "subFields": [
-                        {
-                          "field": null,
-                          "customFieldName": null,
-                          "rule": "stringFieldValueRule"
-                        },
-                        {
-                          "field": null,
-                          "customFieldName": "currencyCode",
-                          "rule": "rootRule"
-                        },
-                        {
-                          "field": null,
-                          "customFieldName": "type",
-                          "rule": "rootRule",
-                          "staticValue": true
-                        }
-                      ]
+                      "customFieldName": "amount",
+                      "rule": null
                     },
                     {
                       "field": null,
-                      "customFieldName": null,
-                      "rule": "skipFieldIfNullRule",
-                      "subFields": [
-                        {
-                          "field": null,
-                          "customFieldName": "amount",
-                          "rule": "stringFieldValueRule"
-                        },
-                        {
-                          "field": null,
-                          "customFieldName": "currencyCode",
-                          "rule": "rootRule"
-                        },
-                        {
-                          "field": null,
-                          "customFieldName": "type",
-                          "rule": "rootRule",
-                          "staticValue": true
-                        }
-                      ]
+                      "customFieldName": "currencyCode",
+                      "rule": null
                     },
                     {
                       "field": null,
-                      "customFieldName": null,
-                      "rule": "skipFieldIfNullRule",
-                      "subFields": [
-                        {
-                          "field": null,
-                          "customFieldName": null,
-                          "rule": "stringFieldValueRule"
-                        },
-                        {
-                          "field": null,
-                          "customFieldName": "currencyCode",
-                          "rule": "rootRule"
-                        },
-                        {
-                          "field": null,
-                          "customFieldName": "type",
-                          "rule": "rootRule",
-                          "staticValue": true
-                        }
-                      ]
-                    },
-                    {
-                      "field": null,
-                      "customFieldName": null,
-                      "rule": "skipFieldIfNullRule",
-                      "subFields": [
-                        {
-                          "field": null,
-                          "customFieldName": null,
-                          "rule": "stringFieldValueRule"
-                        },
-                        {
-                          "field": null,
-                          "customFieldName": "currencyCode",
-                          "rule": "rootRule"
-                        },
-                        {
-                          "field": null,
-                          "customFieldName": "type",
-                          "rule": "rootRule",
-                          "staticValue": true
-                        }
-                      ]
+                      "customFieldName": "type",
+                      "rule": null
                     }
                   ]
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "field": null,
+          "customFieldName": "wheelBase",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "year",
+          "rule": null
+        },
+        {
+          "field": null,
+          "customFieldName": "dealerFeatures",
+          "rule": "asListRule",
+          "subFields": [
             {
               "field": null,
-              "customFieldName": null,
-              "rule": "rootRule"
-            },
-            {
-              "field": null,
-              "customFieldName": null,
-              "rule": "rootRule"
-            },
-            {
-              "field": null,
-              "customFieldName": null,
-              "rule": "rootRule",
-              "subFields": [
-                {
-                  "field": null,
-                  "customFieldName": null,
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": "speeds",
-                  "rule": "stringFieldValueRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": null,
-                  "rule": "rootRule"
-                }
-              ]
-            },
-            {
-              "field": null,
-              "customFieldName": "trim",
-              "rule": "rootRule"
-            },
-            {
-              "field": null,
-              "customFieldName": "vehicleType",
-              "rule": "rootRule"
-            },
-            {
-              "field": null,
-              "customFieldName": "vehicleUse",
-              "rule": "rootRule"
-            },
-            {
-              "field": null,
-              "customFieldName": "marketable",
-              "rule": "booleanFieldValueRule"
-            },
-            {
-              "field": null,
-              "customFieldName": null,
-              "rule": "rootRule",
-              "subFields": [
-                {
-                  "field": null,
-                  "customFieldName": "status",
-                  "rule": "rootRule"
-                }
-              ]
-            },
-            {
-              "field": null,
-              "customFieldName": "options",
-              "rule": "rootRule",
-              "subFields": [
-                {
-                  "field": null,
-                  "customFieldName": "optionCode",
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": "partNumber",
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": "type",
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": "shortTitle",
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": "longTitle",
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": "manufacturer",
-                  "rule": "rootRule"
-                },
-                {
-                  "field": null,
-                  "customFieldName": "description",
-                  "rule": "rootRule"
-                },
-                {
-                  "rule": "rootRule",
-                  "field": null,
-                  "subFields": [
-                    {
-                      "rule": "asListRule",
-                      "field": null,
-                      "subFields": [
-                        {
-                          "rule": "skipFieldIfNullRule",
-                          "field": null,
-                          "subFields": [
-                            {
-                              "rule": "stringFieldValueRule",
-                              "field": null,
-                              "customFieldName": null
-                            },
-                            {
-                              "rule": "rootRule",
-                              "field": null,
-                              "customFieldName": "currencyCode"
-                            },
-                            {
-                              "rule": "rootRule",
-                              "field": null,
-                              "staticValue": true,
-                              "customFieldName": "type"
-                            }
-                          ]
-                        },
-                        {
-                          "rule": "skipFieldIfNullRule",
-                          "field": null,
-                          "subFields": [
-                            {
-                              "rule": "stringFieldValueRule",
-                              "field": null,
-                              "customFieldName": null
-                            },
-                            {
-                              "rule": "rootRule",
-                              "field": null,
-                              "customFieldName": "currencyCode"
-                            },
-                            {
-                              "rule": "rootRule",
-                              "field": null,
-                              "staticValue": true,
-                              "customFieldName": "type"
-                            }
-                          ]
-                        }
-                      ],
-                      "customFieldName": "prices"
-                    }
-                  ],
-                  "customFieldName": "prices"
-                }
-              ]
-            },
-            {
-              "field": null,
-              "customFieldName": null,
-              "rule": "stringFieldValueRule"
-            },
-            {
-              "field": null,
-              "customFieldName": "year",
-              "rule": "integerFieldValueRule"
-            },
-            {
-              "field": null,
-              "customFieldName": "wholesale",
-              "rule": "booleanFieldValueRule"
-            },
-            {
-              "field": null,
-              "customFieldName": "dealerFeatures",
-              "rule": "dealerFeaturesRule",
-              "subFields": [
-                {
-                  "field": null,
-                  "customFieldName": null,
-                  "rule": "skipKeyRule"
-                }
-              ]
+              "customFieldName": "description",
+              "rule": null
             }
           ]
         }
       ]
     }
-    ]
+  ]
 }
